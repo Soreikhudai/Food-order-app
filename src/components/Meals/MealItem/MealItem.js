@@ -1,13 +1,16 @@
 import classes from './MealItem.module.css'
+import MealItemForm from './MealItemForm'
 const MealItem = (props) => {
-   let price=`$${props.price}`
+    let price = `$${props.meal.price}`
     return <li className={classes.meal}>
         <div>
-          <h3>{props.name}</h3>
-          <div className={classes.description}>{props.description}</div>
-          <div className={classes.price}>{price}</div>
+            <h3>{props.meal.name}</h3>
+            <div className={classes.description}>{props.meal.description}</div>
+            <div className={classes.price}>{price}</div>
         </div>
-        <div></div>
+        <div>
+            <MealItemForm />
+        </div>
     </li>
 }
 export default MealItem;
