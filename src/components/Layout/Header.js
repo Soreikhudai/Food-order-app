@@ -8,11 +8,11 @@ const Header = (props) => {
   return (
     <Fragment>
       <header className={classes.header}>
-        <h1>Daisy Meals</h1>
-        <HeaderCartButton onClick={props.onShowCart}/>
+        <h1>Naga Foods</h1>
+        <HeaderCartButton onClick={props.onShowCart} />
       </header>
       <div className={classes['main-image']}>
-        <img src={mealsImage} alt='The food of your choice!' />
+        <img src={mealsImage} alt='A table full of delicious food!' />
       </div>
     </Fragment>
   );
